@@ -7,10 +7,10 @@ ExplorerNavHook reduces the left indentation in the File Explorer navigation pan
 ## Before / After
 
 ### Default Explorer
-![Before](screenshots/before.png)
+![Before](screenshots/before.jpg)
 
 ### With ExplorerNavHook
-![After](screenshots/after.png)
+![After](screenshots/after.jpg)
 
 ## What it does
 
