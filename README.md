@@ -16,14 +16,14 @@ ExplorerNavHook reduces the left indentation in the File Explorer navigation pan
 
 - reduces left indentation in the navigation pane
 - keeps the modern Explorer look
-- supports config-based behavior through ExplorerNavHook.ini
+- supports config-based behavior through `ExplorerNavHook.ini`
 - includes helper scripts for install and uninstall
 
 ## Files
 
 - `ExplorerNavHook.exe` — loader
 - `ExplorerNavHook.dll` — hook library
-- `ExplorerNavHook.ini` — config
+- `ExplorerNavHook.ini` — configuration file
 - `register.cmd` — registration script
 - `uninstall.cmd` — uninstall script
 
@@ -35,7 +35,11 @@ ExplorerNavHook reduces the left indentation in the File Explorer navigation pan
 4. Run `ExplorerNavHook.exe`.
 5. Open a new Explorer window.
 
-## Example config
+## Configuration
+
+ExplorerNavHook is configured through `ExplorerNavHook.ini`.
+
+### Example config
 
 ```ini
 [Hook]
@@ -44,6 +48,35 @@ RemoveHasButtons=1
 RemoveHasLines=1
 RemoveLinesAtRoot=1
 ```
+
+### Parameters
+
+- `TargetIndent` controls how far the navigation tree is shifted to the left.
+- `RemoveLinesAtRoot` controls whether the main expand/collapse arrow is shown for root items such as `This PC`, while keeping child arrows for child items in the tree.
+- `RemoveHasButtons` removes all expand/collapse arrows in the tree.
+- `RemoveHasLines` controls tree line visibility.
+
+### Recommended settings
+
+For most users, the recommended setup is:
+
+```ini
+[Hook]
+TargetIndent=25
+RemoveHasButtons=1
+RemoveHasLines=1
+RemoveLinesAtRoot=1
+```
+
+Recommended starting point:
+
+- `TargetIndent=25`
+
+Recommended adjustment range:
+
+- `25` to `35`
+
+Use higher or lower `TargetIndent` values depending on your display scaling, Explorer layout, and personal preference.
 
 ## Compatibility
 
