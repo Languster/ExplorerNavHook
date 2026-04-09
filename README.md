@@ -1,3 +1,15 @@
+## Windhawk version
+
+This project is also available as a Windhawk mod.
+
+The original project name is `ExplorerNavHook`, while the Windhawk version is published under a more descriptive name: `Explorer Navigation Pane Tweaks`.
+
+**Windhawk mod name:** `Explorer Navigation Pane Tweaks`  
+**Windhawk mod id:** `explorer-navigation-pane-tweaks`
+
+Source file:
+`explorer-navigation-pane-tweaks.wh.cpp`
+
 # ExplorerNavHook
 
 Compact navigation pane hook for Windows Explorer.
